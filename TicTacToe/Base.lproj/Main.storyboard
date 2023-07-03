@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -17,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="WSr-M2-i05">
-                                <rect key="frame" x="20.5" y="266.5" width="373" height="373"/>
+                                <rect key="frame" x="20.5" y="268.5" width="373" height="373"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="wL8-gm-4Z3">
                                         <rect key="frame" x="0.0" y="0.0" width="373" height="121"/>
@@ -140,13 +141,13 @@
                                 </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Turn" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sTD-Ba-1rY">
-                                <rect key="frame" x="184" y="56" width="46" height="29"/>
+                                <rect key="frame" x="184" y="60" width="46" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="X" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sd6-c3-tBK">
-                                <rect key="frame" x="185.5" y="85" width="43.5" height="72"/>
+                                <rect key="frame" x="185.5" y="89" width="43" height="72"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="60"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -165,16 +166,16 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="a1" destination="RuO-Yq-q0F" id="mD6-EF-mOU"/>
-                        <outlet property="a2" destination="pOA-cj-7qf" id="IYf-l6-jEl"/>
-                        <outlet property="a3" destination="7J9-GH-YY1" id="SmT-1w-qIo"/>
-                        <outlet property="b1" destination="5Z2-VG-wyZ" id="ouW-4u-XFb"/>
-                        <outlet property="b2" destination="Auc-i2-rqb" id="i6S-cb-oAT"/>
-                        <outlet property="b3" destination="ZM5-IN-zch" id="jMY-dL-n7J"/>
-                        <outlet property="c1" destination="KbJ-z3-fyG" id="j0e-Wr-0bf"/>
-                        <outlet property="c2" destination="ej7-ag-Vio" id="zuc-NU-TBg"/>
-                        <outlet property="c3" destination="uq6-Gm-8mh" id="WMX-i9-ujJ"/>
                         <outlet property="turnLabel" destination="Sd6-c3-tBK" id="sEb-3h-1cZ"/>
+                        <outletCollection property="Cells" destination="RuO-Yq-q0F" collectionClass="NSMutableArray" id="eqv-5q-WdD"/>
+                        <outletCollection property="Cells" destination="pOA-cj-7qf" collectionClass="NSMutableArray" id="hRi-of-aFW"/>
+                        <outletCollection property="Cells" destination="7J9-GH-YY1" collectionClass="NSMutableArray" id="Laz-2w-4ie"/>
+                        <outletCollection property="Cells" destination="5Z2-VG-wyZ" collectionClass="NSMutableArray" id="E1H-h2-VRB"/>
+                        <outletCollection property="Cells" destination="Auc-i2-rqb" collectionClass="NSMutableArray" id="FIN-kZ-bn9"/>
+                        <outletCollection property="Cells" destination="ZM5-IN-zch" collectionClass="NSMutableArray" id="zE9-lN-Slj"/>
+                        <outletCollection property="Cells" destination="KbJ-z3-fyG" collectionClass="NSMutableArray" id="0jl-BT-vOT"/>
+                        <outletCollection property="Cells" destination="ej7-ag-Vio" collectionClass="NSMutableArray" id="BnW-Jm-DiU"/>
+                        <outletCollection property="Cells" destination="uq6-Gm-8mh" collectionClass="NSMutableArray" id="4iF-Mh-Apd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
